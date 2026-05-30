@@ -3,32 +3,40 @@ package ua.khpi.oop.lab01;
 import java.util.Objects;
 
 public class Coach {
-    private String fullName;
-    private String specialization;
-    private int experienceYears;
-
-    public Coach() {
-    }
+    private final String fullName;
+    private final String specialization;
+    private final int experienceYears;
 
     public Coach(String fullName, String specialization, int experienceYears) {
+        if (fullName == null || fullName.isEmpty()) {
+            throw new IllegalArgumentException("fullName cannot be null");
+        }
         this.fullName = fullName;
         this.specialization = specialization;
         this.experienceYears = experienceYears;
     }
 
-    public String getFullName() { return fullName; }
-    public void setFullName(String fullName) { this.fullName = fullName; }
+    public String getFullName() {
+        return fullName;
+    }
 
-    public String getSpecialization() { return specialization; }
-    public void setSpecialization(String specialization) { this.specialization = specialization; }
+    public String getSpecialization() {
+        return specialization;
+    }
 
-    public int getExperienceYears() { return experienceYears; }
-    public void setExperienceYears(int experienceYears) { this.experienceYears = experienceYears; }
+    public int getExperienceYears() {
+        return experienceYears;
+    }
+
+    // Змістовний метод: перевіряє, чи тренер досвідчений (більше 5 років)
+    public boolean isExperienced() {
+        return experienceYears >= 5;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Coach)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Coach coach = (Coach) o;
         return experienceYears == coach.experienceYears &&
                 Objects.equals(fullName, coach.fullName) &&
@@ -42,7 +50,10 @@ public class Coach {
 
     @Override
     public String toString() {
-        return String.format("Coach [Name='%s', Specialization='%s', Experience=%d years]",
-                fullName, specialization, experienceYears);
+        return "Coach{" +
+                "fullName='" + fullName + '\'' +
+                ", specialization='" + specialization + '\'' +
+                ", experienceYears=" + experienceYears +
+                '}';
     }
 }

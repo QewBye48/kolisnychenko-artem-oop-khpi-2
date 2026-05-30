@@ -3,12 +3,9 @@ package ua.khpi.oop.lab01;
 import java.util.Objects;
 
 public class Schedule {
-    private String dayOfWeek;
-    private String startTime;
-    private int durationMinutes;
-
-    public Schedule() {
-    }
+    private final String dayOfWeek;
+    private final String startTime;
+    private final int durationMinutes;
 
     public Schedule(String dayOfWeek, String startTime, int durationMinutes) {
         this.dayOfWeek = dayOfWeek;
@@ -16,19 +13,27 @@ public class Schedule {
         this.durationMinutes = durationMinutes;
     }
 
-    public String getDayOfWeek() { return dayOfWeek; }
-    public void setDayOfWeek(String dayOfWeek) { this.dayOfWeek = dayOfWeek; }
+    public String getDayOfWeek() {
+        return dayOfWeek;
+    }
 
-    public String getStartTime() { return startTime; }
-    public void setStartTime(String startTime) { this.startTime = startTime; }
+    public String getStartTime() {
+        return startTime;
+    }
 
-    public int getDurationMinutes() { return durationMinutes; }
-    public void setDurationMinutes(int durationMinutes) { this.durationMinutes = durationMinutes; }
+    public int getDurationMinutes() {
+        return durationMinutes;
+    }
+
+    // Змістовний метод
+    public void printTime() {
+        System.out.println("Заняття у " + dayOfWeek + " о " + startTime + " (тривалість: " + durationMinutes + " хв)");
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Schedule)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Schedule schedule = (Schedule) o;
         return durationMinutes == schedule.durationMinutes &&
                 Objects.equals(dayOfWeek, schedule.dayOfWeek) &&
@@ -42,7 +47,10 @@ public class Schedule {
 
     @Override
     public String toString() {
-        return String.format("Schedule [Day=%s, Time=%s, Duration=%d min]",
-                dayOfWeek, startTime, durationMinutes);
+        return "Schedule{" +
+                "dayOfWeek='" + dayOfWeek + '\'' +
+                ", startTime='" + startTime + '\'' +
+                ", durationMinutes=" + durationMinutes +
+                '}';
     }
 }
