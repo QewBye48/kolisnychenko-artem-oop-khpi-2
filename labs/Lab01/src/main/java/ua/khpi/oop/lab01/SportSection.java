@@ -1,58 +1,34 @@
 package ua.khpi.oop.lab01;
 
-import java.util.Objects;
-
 public class SportSection {
-    private final String sectionName;
-    private final String sportType;
-    private final String location;
+    private String name;
+    private Coach coach;
+    private Schedule schedule;
 
-    public SportSection(String sectionName, String sportType, String location) {
-        if (sectionName == null || sectionName.isEmpty()) {
-            throw new IllegalArgumentException("sectionName cannot be null or empty");
-        }
-        this.sectionName = sectionName;
-        this.sportType = sportType;
-        this.location = location;
+    public SportSection() {
+        this.name = "Невідома секція";
     }
 
-    public String getSectionName() {
-        return sectionName;
+    public SportSection(String name, Coach coach, Schedule schedule) {
+        this.name = name;
+        this.coach = coach;
+        this.schedule = schedule;
     }
 
-    public String getSportType() {
-        return sportType;
+    public String getName() {
+        return name;
     }
 
-    public String getLocation() {
-        return location;
+    public Coach getCoach() {
+        return coach;
     }
 
-    public String getDetails() {
-        return String.format("Секція: %s (%s), Місце: %s", sectionName, sportType, location);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        SportSection that = (SportSection) o;
-        return Objects.equals(sectionName, that.sectionName) &&
-                Objects.equals(sportType, that.sportType) &&
-                Objects.equals(location, that.location);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(sectionName, sportType, location);
+    public Schedule getSchedule() {
+        return schedule;
     }
 
     @Override
     public String toString() {
-        return "SportSection{" +
-                "sectionName='" + sectionName + '\'' +
-                ", sportType='" + sportType + '\'' +
-                ", location='" + location + '\'' +
-                '}';
+        return "Секція: " + name + "\n" + coach.toString() + "\nРозклад: " + schedule.toString();
     }
 }
