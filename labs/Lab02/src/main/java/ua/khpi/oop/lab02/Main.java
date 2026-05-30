@@ -2,29 +2,19 @@ package ua.khpi.oop.lab02;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Еволюція моделі: Спортивний Клуб (ЛР2)");
+        SportsClub club = new SportsClub("ХПІ Спорт");
 
-        SportsClub polytechClub = new SportsClub("Спортивний Клуб ХПІ", "вул. Весни 12");
+        Coach coach = new Coach("Іванов І.І.", "Бокс");
+        Schedule schedule = new Schedule("Понеділок", "16:00");
+        SportSection section = new SportSection("Секція Боксу ХПІ", coach, schedule);
 
-        SportSection boxing = new SportSection("Секція Боксу", "Бокс", "Зал №3");
-        Student student = new Student("Колісніченко Артем", "КН-924в-05", 2);
+        Student student = new Student("Артем Колісниченко");
 
-        polytechClub.addSection(boxing);
-        polytechClub.registerStudent(student);
+        club.addSection(section);
+        club.registerStudent(student);
 
-        System.out.println(polytechClub);
+        club.enrollStudent(student, section, "15.09.2026");
 
-        System.out.println("\nПроцес запису студента");
-        Enrollment entry = polytechClub.enrollStudent(student, boxing, "2026-05-30");
-        System.out.println(entry);
-        System.out.println(polytechClub);
-
-        System.out.println("\nСпроба запису на закриту секцію");
-        boxing.setRegistrationStatus(false);
-        try {
-            polytechClub.enrollStudent(student, boxing, "2026-05-31");
-        } catch (IllegalStateException e) {
-            System.out.println("Перехоплено очікуване обмеження: " + e.getMessage());
-        }
+        club.printClubStats();
     }
 }
