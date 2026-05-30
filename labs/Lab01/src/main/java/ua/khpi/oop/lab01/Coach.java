@@ -28,7 +28,6 @@ public class Coach {
         return experienceYears;
     }
 
-    // Змістовний метод: перевіряє, чи тренер досвідчений (більше 5 років)
     public boolean isExperienced() {
         return experienceYears >= 5;
     }

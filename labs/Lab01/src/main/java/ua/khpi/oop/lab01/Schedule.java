@@ -25,7 +25,6 @@ public class Schedule {
         return durationMinutes;
     }
 
-    // Змістовний метод
     public void printTime() {
         System.out.println("Заняття у " + dayOfWeek + " о " + startTime + " (тривалість: " + durationMinutes + " хв)");
     }

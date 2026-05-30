@@ -28,7 +28,6 @@ public class SportSection {
         return location;
     }
 
-    // Той самий "змістовний" метод для діаграми
     public String getDetails() {
         return String.format("Секція: %s (%s), Місце: %s", sectionName, sportType, location);
     }
