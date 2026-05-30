@@ -4,22 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="350b4730-36d1-441e-9447-d5fc2e0097f0" name="Changes" comment="Add Lab02 solution: Aggregation and Composition">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="350b4730-36d1-441e-9447-d5fc2e0097f0" name="Changes" comment="Add Lab01 solution: Sport sections">
+      <change beforePath="$PROJECT_DIR$/../Lab03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/lab03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/Requirements.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/docs/UML diagram.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/docs/Звіт_ЛР3_ООП.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/Coach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/Enrollment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/SportSection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/SportsClub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/main/java/ua/khpi/oop/lab03/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/CoachTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/EnrollmentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/ScheduleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/SportSectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/SportsClubTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/src/test/java/ua/khpi/oop/lab03/StudentTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="lab02" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
@@ -38,10 +63,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab02&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab01&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/kolisnychenko-artem-oop-khpi-2/labs/Lab02&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/kolisnychenko-artem-oop-khpi-2/labs/Lab01&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -52,6 +76,19 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kolisnychenko-artem-oop-khpi-2\labs\lab01" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lab02" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lab02" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,15 +106,7 @@
       <option name="project" value="LOCAL" />
       <updated>1780148746288</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add Lab02 solution: Aggregation and Composition">
-      <option name="closed" value="true" />
-      <created>1780155250929</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1780155250929</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,7 +122,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Lab01 solution: Sport sections" />
-    <MESSAGE value="Add Lab02 solution: Aggregation and Composition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Lab02 solution: Aggregation and Composition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Lab01 solution: Sport sections" />
   </component>
 </project>
