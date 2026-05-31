@@ -1,0 +1,46 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Building {
+    - address : String
+    - yearBuilt : int
+    + Building(address : String, yearBuilt : int)
+    + getAddress() : String
+    + getYearBuilt() : int
+    + description() : String
+}
+
+class PublicBuilding {
+    - visitorCapacity : int
+    + PublicBuilding(address : String, yearBuilt : int, visitorCapacity : int)
+    + getVisitorCapacity() : int
+    + description() : String
+}
+
+class EducationalBuilding {
+    - classroomsCount : int
+    + EducationalBuilding(address : String, yearBuilt : int, visitorCapacity : int, classroomsCount : int)
+    + getClassroomsCount() : int
+    + description() : String
+}
+
+class UniversityCampusBuilding {
+    - facultyName : String
+    + UniversityCampusBuilding(address : String, yearBuilt : int, visitorCapacity : int, classroomsCount : int, facultyName : String)
+    + getFacultyName() : String
+    + description() : String
+}
+
+class MedicalBuilding {
+    - doctorsCount : int
+    + MedicalBuilding(address : String, yearBuilt : int, visitorCapacity : int, doctorsCount : int)
+    + getDoctorsCount() : int
+    + description() : String
+}
+
+Building <|-- PublicBuilding
+PublicBuilding <|-- EducationalBuilding
+EducationalBuilding <|-- UniversityCampusBuilding
+PublicBuilding <|-- MedicalBuilding
+
+@enduml
