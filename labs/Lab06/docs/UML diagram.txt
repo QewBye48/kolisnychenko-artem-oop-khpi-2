@@ -1,0 +1,48 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+abstract class DeliveryMethod {
+    # orderId : String
+    # address : String
+    # basePrice : double
+
+    + DeliveryMethod(orderId : String, address : String, basePrice : double)
+    + getOrderId() : String
+    + getAddress() : String
+    + getBasePrice() : double
+    + getInfo() : String
+    {abstract} + calculatePrice() : double
+}
+
+class CourierDelivery {
+    - distanceKm : int
+
+    + CourierDelivery(orderId : String, address : String, basePrice : double, distanceKm : int)
+    + getDistanceKm() : int
+    + calculatePrice() : double
+    + getInfo() : String
+}
+
+class ParcelLockerDelivery {
+    - lockerNumber : String
+
+    + ParcelLockerDelivery(orderId : String, address : String, basePrice : double, lockerNumber : String)
+    + getLockerNumber() : String
+    + calculatePrice() : double
+    + getInfo() : String
+}
+
+class DroneDelivery {
+    - weightKg : double
+
+    + DroneDelivery(orderId : String, address : String, basePrice : double, weightKg : double)
+    + getWeightKg() : double
+    + calculatePrice() : double
+    + getInfo() : String
+}
+
+DeliveryMethod <|-- CourierDelivery
+DeliveryMethod <|-- ParcelLockerDelivery
+DeliveryMethod <|-- DroneDelivery
+
+@enduml
