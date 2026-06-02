@@ -1,0 +1,67 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Assignable {
+    + assignTo(personName : String) : String
+    + getAssignee() : String
+}
+
+interface Commentable {
+    + addComment(comment : String) : String
+    + getCommentsCount() : int
+}
+
+class TaskCard {
+    - title : String
+    - description : String
+    - assignee : String
+    - commentsCount : int
+
+    + TaskCard(title : String, description : String)
+    + getTitle() : String
+    + getDescription() : String
+    + assignTo(personName : String) : String
+    + getAssignee() : String
+    + addComment(comment : String) : String
+    + getCommentsCount() : int
+    + getInfo() : String
+}
+
+class BugReport {
+    - bugId : String
+    - severity : String
+    - assignee : String
+    - commentsCount : int
+
+    + BugReport(bugId : String, severity : String)
+    + getBugId() : String
+    + getSeverity() : String
+    + assignTo(personName : String) : String
+    + getAssignee() : String
+    + addComment(comment : String) : String
+    + getCommentsCount() : int
+    + getInfo() : String
+}
+
+class ReviewNote {
+    - author : String
+    - text : String
+    - commentsCount : int
+
+    + ReviewNote(author : String, text : String)
+    + getAuthor() : String
+    + getText() : String
+    + addComment(comment : String) : String
+    + getCommentsCount() : int
+    + getInfo() : String
+}
+
+Assignable <|.. TaskCard
+Commentable <|.. TaskCard
+
+Assignable <|.. BugReport
+Commentable <|.. BugReport
+
+Commentable <|.. ReviewNote
+
+@enduml
