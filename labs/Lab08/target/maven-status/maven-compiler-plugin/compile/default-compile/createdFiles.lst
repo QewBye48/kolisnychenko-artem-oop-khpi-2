@@ -1,0 +1,7 @@
+ua\khpi\oop\lab08\demo\Main.class
+ua\khpi\oop\lab08\model\ReviewNote.class
+ua\khpi\oop\lab08\service\ProjectWorkspace.class
+ua\khpi\oop\lab08\exception\InvalidWorkspaceDataException.class
+ua\khpi\oop\lab08\model\BugReport.class
+ua\khpi\oop\lab08\persistence\WorkspaceFileManager.class
+ua\khpi\oop\lab08\model\TaskCard.class

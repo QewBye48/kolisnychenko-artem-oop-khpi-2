@@ -1,0 +1,64 @@
+@startuml
+skinparam classAttributeIconSize 0
+top to bottom direction
+
+package "model" {
+    class TaskCard {
+        - id : String
+        - title : String
+        - assignee : String
+        - commentsCount : int
+        + toTextLine() : String
+    }
+
+    class BugReport {
+        - id : String
+        - severity : String
+        - assignee : String
+        - commentsCount : int
+        + toTextLine() : String
+    }
+
+    class ReviewNote {
+        - id : String
+        - author : String
+        - text : String
+        - commentsCount : int
+        + toTextLine() : String
+    }
+}
+
+package "service" {
+    class ProjectWorkspace {
+        - tasks : List<TaskCard>
+        - bugs : List<BugReport>
+        - notes : List<ReviewNote>
+        + addTask(task : TaskCard) : void
+        + addBug(bug : BugReport) : void
+        + addReviewNote(note : ReviewNote) : void
+        + showAll() : String
+    }
+}
+
+package "persistence" {
+    class WorkspaceFileManager {
+        + saveAsText(workspace : ProjectWorkspace, path : Path) : void
+        + loadFromText(path : Path) : ProjectWorkspace
+        + serialize(workspace : ProjectWorkspace, path : Path) : void
+        + deserialize(path : Path) : ProjectWorkspace
+    }
+}
+
+package "exception" {
+    class InvalidWorkspaceDataException
+}
+
+ProjectWorkspace o-- "0..*" TaskCard
+ProjectWorkspace o-- "0..*" BugReport
+ProjectWorkspace o-- "0..*" ReviewNote
+
+WorkspaceFileManager ..> ProjectWorkspace : read/write
+WorkspaceFileManager ..> InvalidWorkspaceDataException : throws
+ProjectWorkspace ..> InvalidWorkspaceDataException : duplicate id
+
+@enduml
