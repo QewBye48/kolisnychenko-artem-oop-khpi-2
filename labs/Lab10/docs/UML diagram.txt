@@ -1,0 +1,79 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+top to bottom direction
+
+package "model" {
+
+    class Player {
+        - nickname : String
+        - level : int
+        + Player(nickname : String, level : int)
+        + getNickname() : String
+        + getLevel() : int
+        + toString() : String
+    }
+
+    class Item {
+        - name : String
+        - slot : EquipmentSlot
+        - power : int
+        + Item(name : String, slot : EquipmentSlot, power : int)
+        + getName() : String
+        + getSlot() : EquipmentSlot
+        + getPower() : int
+        + toString() : String
+    }
+
+    enum EquipmentSlot {
+        WEAPON
+        ARMOR
+        HELMET
+        RING
+        POTION
+    }
+}
+
+package "container" {
+
+    class "InventoryContainer<T>" as InventoryContainer {
+        - items : Object[]
+        - size : int
+        + InventoryContainer()
+        + InventoryContainer(capacity : int)
+        + add(item : T) : void
+        + get(index : int) : T
+        + remove(index : int) : T
+        + size() : int
+        + capacity() : int
+        + isEmpty() : boolean
+        + clear() : void
+        + iterator() : Iterator<T>
+    }
+
+    class "InventoryIterator" as InventoryIterator {
+        - currentIndex : int
+        + hasNext() : boolean
+        + next() : T
+    }
+}
+
+package "demo" {
+    class Main {
+        + main(args : String[]) : void
+    }
+}
+
+Item --> EquipmentSlot : slot
+
+InventoryContainer ..|> Iterable
+InventoryContainer --> InventoryIterator : створює
+
+InventoryIterator ..|> Iterator
+
+Main ..> Player
+Main ..> Item
+Main ..> EquipmentSlot
+Main ..> InventoryContainer
+
+@enduml
