@@ -1,0 +1,111 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+top to bottom direction
+
+package "model" {
+
+    class Movie {
+        - title : String
+        - genre : String
+        - year : int
+        - rating : double
+        - durationMinutes : int
+        + Movie(title : String, genre : String, year : int, rating : double, durationMinutes : int)
+        + getTitle() : String
+        + getGenre() : String
+        + getYear() : int
+        + getRating() : double
+        + getDurationMinutes() : int
+        + toString() : String
+    }
+
+    class Episode {
+        - title : String
+        - seasonNumber : int
+        - episodeNumber : int
+        - durationMinutes : int
+        + Episode(title : String, seasonNumber : int, episodeNumber : int, durationMinutes : int)
+        + getTitle() : String
+        + getSeasonNumber() : int
+        + getEpisodeNumber() : int
+        + getDurationMinutes() : int
+        + toString() : String
+    }
+
+    class Podcast {
+        - title : String
+        - host : String
+        - topic : String
+        - episodes : List<Episode>
+        + Podcast(title : String, host : String, topic : String, episodes : List<Episode>)
+        + getTitle() : String
+        + getHost() : String
+        + getTopic() : String
+        + getEpisodes() : List<Episode>
+        + getEpisodeCount() : int
+        + toString() : String
+    }
+}
+
+package "service" {
+
+    class MediaLibrary {
+        - movies : List<Movie>
+        - podcasts : List<Podcast>
+        + MediaLibrary(movies : List<Movie>, podcasts : List<Podcast>)
+        + getAllMovies() : List<Movie>
+        + getAllPodcasts() : List<Podcast>
+        + getMoviesByGenre(genre : String) : List<Movie>
+        + getMovieTitlesSortedByRating() : List<String>
+        + getTopMovies(limit : int) : List<Movie>
+        + countMoviesByGenre(genre : String) : long
+        + groupMoviesByGenre() : Map<String, List<Movie>>
+        + countMoviesByGenreMap() : Map<String, Long>
+        + getAverageMovieRating() : double
+        + getLongestMovie() : Optional<Movie>
+        + getMovieRatingStatistics() : DoubleSummaryStatistics
+        + getPodcastTitles() : List<String>
+        + getAllEpisodeTitles() : List<String>
+        + countEpisodesByPodcast() : Map<String, Long>
+        + buildMovieReport() : String
+        + getMoviesByGenreImperative(genre : String) : List<Movie>
+    }
+}
+
+package "demo" {
+    class Main {
+        + main(args : String[]) : void
+    }
+}
+
+Podcast o-- "0..*" Episode : episodes
+
+MediaLibrary o-- "0..*" Movie : movies
+MediaLibrary o-- "0..*" Podcast : podcasts
+
+Main ..> Movie
+Main ..> Episode
+Main ..> Podcast
+Main ..> MediaLibrary
+
+note right of MediaLibrary
+Stream API methods:
+filter()
+map()
+sorted()
+count()
+toList()
+collect()
+groupingBy()
+flatMap()
+max()
+joining()
+end note
+
+note bottom of MediaLibrary
+MediaLibrary зберігає колекції даних
+і виконує обробку через Stream API.
+end note
+
+@enduml
