@@ -1,0 +1,50 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+package "model" {
+class ProductOrder {
+  - article : String
+  - productName : String
+  - quantity : int
+  - price : double
+  + getArticle() : String
+  + getProductName() : String
+  + getQuantity() : int
+  + getPrice() : double
+  + getTotalPrice() : double
+}
+
+class OrderReport {
+  - validRecords : int
+  - invalidRecords : int
+  - totalAmount : double
+  + getValidRecords() : int
+  + getInvalidRecords() : int
+  + getTotalAmount() : double
+}
+}
+
+package "service" {
+class OrderTextProcessor {
+  + normalizeText(line : String) : String
+  + parseLine(rawLine : String) : ProductOrder
+  + parseValidLines(rawLines : List<String>) : List<ProductOrder>
+  + countInvalidLines(rawLines : List<String>) : int
+  + createReport(rawLines : List<String>) : OrderReport
+  + buildReceipt(rawLines : List<String>) : String
+}
+}
+
+package "demo" {
+class Main {
+  + main(args : String[]) : void
+}
+}
+
+OrderTextProcessor --> ProductOrder
+OrderTextProcessor --> OrderReport
+Main ..> OrderTextProcessor
+
+@enduml

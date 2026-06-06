@@ -1,0 +1,5 @@
+src/main/java/ua/khpi/oop/lab13/model/ProductOrder.java
+src/main/java/ua/khpi/oop/lab13/model/OrderReport.java
+src/main/java/ua/khpi/oop/lab13/service/OrderTextProcessor.java
+src/main/java/ua/khpi/oop/lab13/demo/Main.java
+src/main/resources/orders.txt
