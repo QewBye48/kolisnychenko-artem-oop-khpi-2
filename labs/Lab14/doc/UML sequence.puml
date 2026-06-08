@@ -1,0 +1,40 @@
+@startuml
+title ЛР14. Запуск потоків медіатеки
+
+actor User
+participant Main
+participant "CatalogScanThread\nThread" as Scan
+participant "SortThread\n(SortTask Runnable)" as Sort
+participant "RecommendationThread\n(RecommendationTask Runnable)" as Recommendation
+
+User -> Main : start program
+
+Main -> Scan : start()
+Main -> Sort : start()
+Main -> Recommendation : start()
+
+par Catalog scanning
+  Scan -> Scan : run()
+  Scan -> Scan : sleep()
+  Scan -> Scan : scan catalog
+end
+
+par Movie sorting
+  Sort -> Sort : run()
+  Sort -> Sort : sleep()
+  Sort -> Sort : sort movies by rating
+end
+
+par Recommendations
+  Recommendation -> Recommendation : run()
+  Recommendation -> Recommendation : sleep()
+  Recommendation -> Recommendation : generate recommendations
+end
+
+Main -> Scan : join()
+Main -> Sort : join()
+Main -> Recommendation : join()
+
+Main -> User : print final results
+
+@enduml
