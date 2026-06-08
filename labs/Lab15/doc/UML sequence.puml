@@ -1,0 +1,84 @@
+@startuml
+title ЛР15. Сценарій запуску потоків
+
+skinparam shadowing false
+
+actor User
+
+participant Main
+participant CounterService
+participant UnsafeSharedCounter
+participant SafeSharedCounter
+participant "CounterTask\nRunnable" as Task
+participant "CounterThread-1..4\nThread" as Threads
+
+User -> Main : start program
+
+Main -> CounterService : create service
+
+Main -> CounterService : runSequentialScenario(...)
+activate CounterService
+
+CounterService -> SafeSharedCounter : reset()
+
+loop 400000 operations
+    CounterService -> SafeSharedCounter : increment()
+end
+
+CounterService -> SafeSharedCounter : getValue()
+SafeSharedCounter --> CounterService : 400000
+CounterService --> Main : sequentialResult
+deactivate CounterService
+
+Main -> CounterService : runConcurrentScenario("unsafe", unsafeCounter, 4, 100000)
+activate CounterService
+
+CounterService -> UnsafeSharedCounter : reset()
+CounterService -> Task : create CounterTask x4
+CounterService -> Threads : start()
+
+group Паралельне виконання без синхронізації
+    Threads -> Task : run()
+    loop 100000 operations per thread
+        Task -> UnsafeSharedCounter : increment()
+    end
+end
+
+CounterService -> Threads : join()
+CounterService -> UnsafeSharedCounter : getValue()
+UnsafeSharedCounter --> CounterService : value < 400000
+CounterService --> Main : unsafeResult
+deactivate CounterService
+
+Main -> CounterService : runConcurrentScenario("safe", safeCounter, 4, 100000)
+activate CounterService
+
+CounterService -> SafeSharedCounter : reset()
+CounterService -> Task : create CounterTask x4
+CounterService -> Threads : start()
+
+group Паралельне виконання з synchronized
+    Threads -> Task : run()
+    loop 100000 operations per thread
+        Task -> SafeSharedCounter : increment()
+    end
+end
+
+CounterService -> Threads : join()
+CounterService -> SafeSharedCounter : getValue()
+SafeSharedCounter --> CounterService : 400000
+CounterService --> Main : safeResult
+deactivate CounterService
+
+Main -> CounterService : buildTextReport(sequentialResult)
+CounterService --> Main : text
+
+Main -> CounterService : buildTextReport(unsafeResult)
+CounterService --> Main : text
+
+Main -> CounterService : buildTextReport(safeResult)
+CounterService --> Main : text
+
+Main --> User : print results
+
+@enduml
