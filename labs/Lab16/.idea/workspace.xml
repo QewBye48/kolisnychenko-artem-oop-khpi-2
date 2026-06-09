@@ -5,32 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fd18f45-9642-4ab3-8191-c17ca19160b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/REPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Requirements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/UML ci.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/UML ci.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/UML class.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/UML class.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/native-headers/ua_khpi_oop_lab16_NativeNormalizer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/native/native_normalizer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/JavaNormalizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/NativeNormalizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/NormalizerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab16/NormalizerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab01/Lab02.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" afterDir="false" />

@@ -1,0 +1,51 @@
+name: Java JNI CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - lab16
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: labs/Lab16
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Generate JNI headers
+        run: |
+          mkdir -p native-headers target/classes
+          javac -h native-headers \
+            -d target/classes \
+            src/main/java/ua/khpi/oop/lab16/NativeNormalizer.java
+
+      - name: Build native library
+        run: |
+          mkdir -p target/native
+          clang++ -std=c++17 -shared -fPIC \
+            -I"$JAVA_HOME/include" \
+            -I"$JAVA_HOME/include/linux" \
+            -Inative-headers \
+            native/native_normalizer.cpp \
+            -o target/native/libnativenormalizer.so
+
+      - name: Build Java project
+        run: mvn compile
+
+      - name: Run tests
+        run: mvn test
