@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fd18f45-9642-4ab3-8191-c17ca19160b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab01/Lab02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/CoachTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/CoachTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/EnrollmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/EnrollmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/ScheduleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/ScheduleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportSectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportSectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportsClubTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportsClubTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab08/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab09/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/UML ci.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/UML ci.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3EsOSn5v97GX11Wd46M7jf4SFVO" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,6 +33,7 @@
     "JUnit.NormalizerTest.executor": "Run",
     "Maven. [clean].executor": "Run",
     "Maven. [test].executor": "Run",
+    "Maven.lab16 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",

@@ -1,53 +1,37 @@
 @startuml
-title ЛР16. Локальна збірка та CI через GitHub Actions
-
-skinparam shadowing false
+title ЛР16. Послідовність локальної перевірки та CI
 
 actor Developer
+participant GitHub
+participant "GitHub Actions" as CI
+participant JDK
+participant "clang++" as Clang
+participant Maven
+participant Tests
+participant JavaNormalizer
+participant "Native library\nlibnativenormalizer.so" as NativeLib
 
-box "Local machine"
-    participant "IntelliJ IDEA" as IDE
-    participant "Maven" as Maven
-    participant "javac -h" as Javac
-    participant "clang++" as Clang
-    participant "Java tests" as Tests
-end box
+Developer -> GitHub : push / pull request
+GitHub -> CI : trigger workflow
 
-box "Repository"
-    participant "GitHub" as GitHub
-end box
+CI -> JDK : setup Java 21
+CI -> JDK : javac -h native-headers
+CI -> Clang : build native library
+Clang --> CI : libnativenormalizer.so
 
-box "GitHub Actions"
-    participant "CI workflow\nci.yml" as CI
-    participant "Ubuntu runner" as Runner
-end box
+CI -> Maven : mvn compile
+CI -> Maven : mvn test
 
-Developer -> IDE : edit Java and C++ code
-IDE -> Maven : mvn compile
-Maven --> IDE : Java build result
+Maven -> Tests : run unit tests
+Tests -> JavaNormalizer : normalize(values)
+Tests -> NativeLib : call JNI normalize(values)
 
-IDE -> Javac : generate JNI header
-Javac --> IDE : native-headers/*.h
+JavaNormalizer --> Tests : java result
+NativeLib --> Tests : native result
 
-IDE -> Clang : build native library
-Clang --> IDE : nativenormalizer.dll / libnativenormalizer.so
-
-IDE -> Tests : mvn test
-Tests --> IDE : test result
-
-Developer -> GitHub : git push / pull request
-
-GitHub -> CI : start workflow
-
-CI -> Runner : checkout repository
-CI -> Runner : set up JDK 21
-CI -> Runner : generate JNI headers
-CI -> Runner : build native library with clang++
-CI -> Runner : mvn compile
-CI -> Runner : mvn test
-
-Runner --> CI : success / failure
-CI --> GitHub : workflow status
-GitHub --> Developer : CI result
+Tests -> Tests : compare Java and native results
+Tests --> Maven : passed
+Maven --> CI : success
+CI --> GitHub : workflow passed
 
 @enduml
