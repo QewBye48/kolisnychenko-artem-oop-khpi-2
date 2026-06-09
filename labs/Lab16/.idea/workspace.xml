@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fd18f45-9642-4ab3-8191-c17ca19160b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/REPORT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Requirements.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/UML ci.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/UML ci.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/UML class.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/UML class.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/native-headers/ua_khpi_oop_lab16_NativeNormalizer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/native/native_normalizer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/JavaNormalizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/NativeNormalizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab16/NormalizerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab16/NormalizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/Lab02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/CoachTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/CoachTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/EnrollmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/EnrollmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/ScheduleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/ScheduleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportSectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportSectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportsClubTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/SportsClubTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab12/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3EsOSn5v97GX11Wd46M7jf4SFVO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.NormalizerTest.executor": "Run",
+    "Maven. [clean].executor": "Run",
+    "Maven. [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lab16",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/kolisnychenko-artem-oop-khpi-2/labs/Lab16"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ua.khpi.oop.lab16.Main" />
+      <module name="lab16" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=D:\kolisnychenko-artem-oop-khpi-2\labs\Lab16\target\native" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Lab16" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Lab16" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fd18f45-9642-4ab3-8191-c17ca19160b5" name="Changes" comment="" />
+      <created>1780963812417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780963812417</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,36 @@
+@startuml
+title ЛР16. Автоматизована збірка, тестування і CI для Java-проєкту
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+class ThresholdCounter {
+  + countGreaterThan(values : int[], threshold : int) : int
+}
+
+class NativeThresholdCounter {
+  + countGreaterThan(values : int[], threshold : int) : int
+}
+
+class ThresholdCounterService {
+  - javaCounter : ThresholdCounter
+  - nativeCounter : NativeThresholdCounter
+  + countWithJava(values : int[], threshold : int) : int
+  + countWithNative(values : int[], threshold : int) : int
+  + resultsMatch(values : int[], threshold : int) : boolean
+}
+
+class Main {
+  + main(args : String[]) : void
+}
+
+class ThresholdCounterTest
+
+NativeThresholdCounter ..> "JNI / C++ library" : loadLibrary()
+ThresholdCounterService --> ThresholdCounter
+ThresholdCounterService --> NativeThresholdCounter
+Main --> ThresholdCounterService
+ThresholdCounterTest --> ThresholdCounter
+ThresholdCounterTest --> NativeThresholdCounter
+ThresholdCounterTest --> ThresholdCounterService
+@enduml
