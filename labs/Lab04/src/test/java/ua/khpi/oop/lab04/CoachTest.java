@@ -5,7 +5,7 @@ import static org.testng.Assert.*;
 
 public class CoachTest {
 
-    @Test(groups = {"domain"})
+    @Test
     public void testCoachToString() {
         Coach coach = new Coach("Олександр Усик", "Бокс");
         String result = coach.toString();

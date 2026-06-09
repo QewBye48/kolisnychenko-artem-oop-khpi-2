@@ -5,7 +5,7 @@ import static org.testng.Assert.*;
 
 public class EnrollmentTest {
 
-    @Test(groups = {"smoke"})
+    @Test
     public void testEnrollmentToString() {
         Student student = new Student("Артем");
         Coach coach = new Coach("Тренер", "Спорт");

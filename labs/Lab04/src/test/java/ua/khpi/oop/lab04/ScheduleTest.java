@@ -5,7 +5,7 @@ import static org.testng.Assert.*;
 
 public class ScheduleTest {
 
-    @Test(groups = {"domain"})
+    @Test
     public void testScheduleFormat() {
         Schedule schedule = new Schedule("Вівторок", "16:30");
         String result = schedule.toString();
