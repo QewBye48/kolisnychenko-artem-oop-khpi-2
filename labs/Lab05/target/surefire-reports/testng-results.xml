@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-31T20:46:20 EEST" name="Surefire suite" finished-at="2026-05-31T20:46:20 EEST" duration-ms="47">
+    <groups>
+    </groups>
+    <test started-at="2026-05-31T20:46:20 EEST" name="Surefire test" finished-at="2026-05-31T20:46:20 EEST" duration-ms="47">
+      <class name="ua.khpi.oop.lab05.MedicalBuildingTest">
+        <test-method signature="medicalBuildingDescriptionShouldContainMainInformation()[pri:0, instance:ua.khpi.oop.lab05.MedicalBuildingTest@143640d5]" started-at="2026-05-31T20:46:20 EEST" name="medicalBuildingDescriptionShouldContainMainInformation" finished-at="2026-05-31T20:46:20 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medicalBuildingDescriptionShouldContainMainInformation -->
+        <test-method signature="medicalBuildingShouldStoreOwnAndParentFields()[pri:0, instance:ua.khpi.oop.lab05.MedicalBuildingTest@143640d5]" started-at="2026-05-31T20:46:20 EEST" name="medicalBuildingShouldStoreOwnAndParentFields" finished-at="2026-05-31T20:46:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medicalBuildingShouldStoreOwnAndParentFields -->
+      </class> <!-- ua.khpi.oop.lab05.MedicalBuildingTest -->
+      <class name="ua.khpi.oop.lab05.UniversityCampusBuildingTest">
+        <test-method signature="universityCampusBuildingDescriptionShouldContainAllInformation()[pri:0, instance:ua.khpi.oop.lab05.UniversityCampusBuildingTest@475e586c]" started-at="2026-05-31T20:46:20 EEST" name="universityCampusBuildingDescriptionShouldContainAllInformation" finished-at="2026-05-31T20:46:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- universityCampusBuildingDescriptionShouldContainAllInformation -->
+        <test-method signature="universityCampusBuildingShouldStoreAllFields()[pri:0, instance:ua.khpi.oop.lab05.UniversityCampusBuildingTest@475e586c]" started-at="2026-05-31T20:46:20 EEST" name="universityCampusBuildingShouldStoreAllFields" finished-at="2026-05-31T20:46:20 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- universityCampusBuildingShouldStoreAllFields -->
+      </class> <!-- ua.khpi.oop.lab05.UniversityCampusBuildingTest -->
+      <class name="ua.khpi.oop.lab05.EducationalBuildingTest">
+        <test-method signature="educationalBuildingDescriptionShouldContainMainInformation()[pri:0, instance:ua.khpi.oop.lab05.EducationalBuildingTest@21507a04]" started-at="2026-05-31T20:46:20 EEST" name="educationalBuildingDescriptionShouldContainMainInformation" finished-at="2026-05-31T20:46:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- educationalBuildingDescriptionShouldContainMainInformation -->
+        <test-method signature="educationalBuildingShouldStoreOwnAndParentFields()[pri:0, instance:ua.khpi.oop.lab05.EducationalBuildingTest@21507a04]" started-at="2026-05-31T20:46:20 EEST" name="educationalBuildingShouldStoreOwnAndParentFields" finished-at="2026-05-31T20:46:20 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- educationalBuildingShouldStoreOwnAndParentFields -->
+      </class> <!-- ua.khpi.oop.lab05.EducationalBuildingTest -->
+      <class name="ua.khpi.oop.lab05.PublicBuildingTest">
+        <test-method signature="publicBuildingDescriptionShouldContainMainInformation()[pri:0, instance:ua.khpi.oop.lab05.PublicBuildingTest@6295d394]" started-at="2026-05-31T20:46:20 EEST" name="publicBuildingDescriptionShouldContainMainInformation" finished-at="2026-05-31T20:46:20 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publicBuildingDescriptionShouldContainMainInformation -->
+        <test-method signature="publicBuildingShouldStoreOwnAndParentFields()[pri:0, instance:ua.khpi.oop.lab05.PublicBuildingTest@6295d394]" started-at="2026-05-31T20:46:20 EEST" name="publicBuildingShouldStoreOwnAndParentFields" finished-at="2026-05-31T20:46:20 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publicBuildingShouldStoreOwnAndParentFields -->
+      </class> <!-- ua.khpi.oop.lab05.PublicBuildingTest -->
+      <class name="ua.khpi.oop.lab05.BuildingTest">
+        <test-method signature="constructorSetsFields()[pri:0, instance:ua.khpi.oop.lab05.BuildingTest@7920ba90]" started-at="2026-05-31T20:46:20 EEST" name="constructorSetsFields" finished-at="2026-05-31T20:46:20 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- constructorSetsFields -->
+        <test-method signature="descriptionReturnsCorrectText()[pri:0, instance:ua.khpi.oop.lab05.BuildingTest@7920ba90]" started-at="2026-05-31T20:46:20 EEST" name="descriptionReturnsCorrectText" finished-at="2026-05-31T20:46:20 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- descriptionReturnsCorrectText -->
+      </class> <!-- ua.khpi.oop.lab05.BuildingTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
