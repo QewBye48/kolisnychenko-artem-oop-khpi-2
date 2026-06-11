@@ -1,0 +1,104 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+top to bottom direction
+
+package "model" {
+
+    class Player {
+        - nickname : String
+        - level : int
+        + Player(nickname : String, level : int)
+        + getNickname() : String
+        + getLevel() : int
+        + toString() : String
+    }
+
+    class GameItem {
+        - name : String
+        - type : String
+        - power : int
+        + GameItem(name : String, type : String, power : int)
+        + getName() : String
+        + getType() : String
+        + getPower() : int
+        + toString() : String
+    }
+
+    class Achievement {
+        - title : String
+        - description : String
+        + Achievement(title : String, description : String)
+        + getTitle() : String
+        + getDescription() : String
+        + toString() : String
+        + equals(object : Object) : boolean
+        + hashCode() : int
+    }
+}
+
+package "service" {
+
+    class GameProfileService {
+        - player : Player
+        - items : List<GameItem>
+        - achievements : Set<Achievement>
+        + GameProfileService(player : Player)
+        + getPlayer() : Player
+        + addItem(item : GameItem) : void
+        + findItemByName(name : String) : GameItem
+        + removeItemByName(name : String) : boolean
+        + addAchievement(achievement : Achievement) : boolean
+        + hasAchievement(title : String) : boolean
+        + getItems() : List<GameItem>
+        + getAchievements() : Set<Achievement>
+        + getItemCount() : int
+        + getAchievementCount() : int
+        + showProfile() : String
+    }
+}
+
+package "demo" {
+
+    class Main {
+        + main(args : String[]) : void
+    }
+}
+
+GameProfileService --> Player : profile owner
+GameProfileService o-- "0..*" GameItem : List
+GameProfileService o-- "0..*" Achievement : Set
+
+Main ..> Player
+Main ..> GameItem
+Main ..> Achievement
+Main ..> GameProfileService
+Main ..> Map : entrySet()
+
+note right of GameProfileService
+Collections Framework:
+- ArrayList<GameItem>
+- LinkedHashSet<Achievement>
+
+List зберігає предмети
+у порядку додавання.
+
+Set зберігає унікальні
+досягнення без дублікатів.
+end note
+
+note right of Achievement
+equals() і hashCode()
+реалізовані за title,
+щоб Set коректно
+визначав дублікати.
+end note
+
+note bottom of Main
+У Main додатково використано
+Map<String, String>
+для демонстрації пар
+ключ-значення та entrySet().
+end note
+
+@enduml
