@@ -1,0 +1,37 @@
+@startuml
+title ЛР16. Послідовність локальної перевірки та CI
+
+actor Developer
+participant GitHub
+participant "GitHub Actions" as CI
+participant JDK
+participant "clang++" as Clang
+participant Maven
+participant Tests
+participant JavaNormalizer
+participant "Native library\nlibnativenormalizer.so" as NativeLib
+
+Developer -> GitHub : push / pull request
+GitHub -> CI : trigger workflow
+
+CI -> JDK : setup Java 21
+CI -> JDK : javac -h native-headers
+CI -> Clang : build native library
+Clang --> CI : libnativenormalizer.so
+
+CI -> Maven : mvn compile
+CI -> Maven : mvn test
+
+Maven -> Tests : run unit tests
+Tests -> JavaNormalizer : normalize(values)
+Tests -> NativeLib : call JNI normalize(values)
+
+JavaNormalizer --> Tests : java result
+NativeLib --> Tests : native result
+
+Tests -> Tests : compare Java and native results
+Tests --> Maven : passed
+Maven --> CI : success
+CI --> GitHub : workflow passed
+
+@enduml

@@ -18,12 +18,12 @@ public class SportsClubTest {
         section = new SportSection("Університетський бокс", coach, schedule);
     }
 
-    @Test(groups = {"smoke"})
+    @Test
     public void testClubInitialization() {
         assertNotNull(club);
     }
 
-    @Test(groups = {"domain"})
+    @Test
     public void testEnrollStudent() {
         club.registerStudent(student);
         club.addSection(section);
@@ -33,7 +33,7 @@ public class SportsClubTest {
     }
 
 
-    @Test(groups = {"negative"}, expectedExceptions = NullPointerException.class)
+    @Test
     public void enrollStudent_nullStudent_throwsNPE() {
         Enrollment enrollment = new Enrollment(null, section, "15.09.2026");
         enrollment.toString(); // Це викличе NullPointerException, бо student = null

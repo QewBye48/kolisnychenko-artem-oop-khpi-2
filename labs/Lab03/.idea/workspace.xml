@@ -5,36 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="350b4730-36d1-441e-9447-d5fc2e0097f0" name="Changes" comment="Add Lab02 solution: Aggregation and Composition">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lab03.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab03.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Requirements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/UML diagram.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/Coach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/Enrollment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/SportSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/SportsClub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab03/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/CoachTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/EnrollmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/ScheduleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/SportSectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/SportsClubTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab03/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/Lab02.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +53,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "lab02",
+    "git-widget-placeholder": "lab03",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/kolisnychenko-artem-oop-khpi-2/labs/Lab03",

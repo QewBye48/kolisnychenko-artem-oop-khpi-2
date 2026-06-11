@@ -15,7 +15,7 @@ public class StudentTest {
         };
     }
 
-    @Test(dataProvider = "studentNames", groups = {"domain"})
+    @Test
     public void testStudentCreation(String name) {
         Student student = new Student(name);
         assertEquals(student.getName(), name);

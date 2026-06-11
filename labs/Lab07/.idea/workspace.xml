@@ -5,34 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="350b4730-36d1-441e-9447-d5fc2e0097f0" name="Changes" comment="Add Lab02 solution: Aggregation and Composition">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lab07.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab07.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Requirements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/REPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/UML diagram.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/uml_diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/contracts/Assignable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/contracts/Commentable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/model/BugReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/model/ReviewNote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/khpi/oop/lab07/model/TaskCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab07/contracts/AssignableContractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab07/contracts/CommentableContractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab07/model/BugReportTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab07/model/ReviewNoteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ua/khpi/oop/lab07/model/TaskCardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/lab08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/Lab08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/docs/REPORT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/requirements.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/exception/InvalidWorkspaceDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/model/BugReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/model/ReviewNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/model/TaskCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/persistence/WorkspaceFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab08/src/main/java/ua/khpi/oop/lab08/service/ProjectWorkspace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab01/Lab02.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab03/.idea/workspace.xml" afterDir="false" />
@@ -45,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/src/test/java/ua/khpi/oop/lab04/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab05/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,56 +70,56 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.JolMain.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.AssignableContractTest.executor": "Run",
-    "JUnit.CoachTest.executor": "Run",
-    "JUnit.CommentableContractTest.executor": "Run",
-    "JUnit.EnrollmentTest.executor": "Run",
-    "JUnit.ScheduleTest.executor": "Run",
-    "JUnit.SportSectionTest.executor": "Run",
-    "JUnit.SportsClubFixtureTest.executor": "Run",
-    "JUnit.SportsClubTest.executor": "Run",
-    "JUnit.StudentTest.executor": "Run",
-    "Maven.Lab04 [clean].executor": "Run",
-    "Maven.Lab04 [compile].executor": "Run",
-    "Maven.Lab04 [test].executor": "Run",
-    "Maven.Lab05 [compile].executor": "Run",
-    "Maven.Lab05 [test].executor": "Run",
-    "Maven.Lab06 [test].executor": "Run",
-    "Maven.Lab07 [test].executor": "Run",
-    "Maven.lab03-sports-club [clean].executor": "Run",
-    "Maven.lab03-sports-club [verify].executor": "Run",
-    "Maven.lab05 [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.BuildingTest.executor": "Run",
-    "TestNG.CoachTest.executor": "Run",
-    "TestNG.CourierDeliveryTest.executor": "Run",
-    "TestNG.DeliveryMethodPolymorphismTest.executor": "Run",
-    "TestNG.EducationalBuildingTest.executor": "Run",
-    "TestNG.EnrollmentTest.executor": "Run",
-    "TestNG.MedicalBuildingTest.executor": "Run",
-    "TestNG.ParcelLockerDeliveryTest.executor": "Run",
-    "TestNG.ScheduleTest.executor": "Run",
-    "TestNG.SportSectionTest.executor": "Run",
-    "TestNG.SportsClubTest.executor": "Run",
-    "TestNG.StudentTest.executor": "Run",
-    "TestNG.UniversityCampusBuildingTest.executor": "Run",
-    "git-widget-placeholder": "lab06",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/kolisnychenko-artem-oop-khpi-2/labs/Lab07",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.JolMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AssignableContractTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CoachTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CommentableContractTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EnrollmentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScheduleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SportSectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SportsClubFixtureTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SportsClubTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab04 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab04 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab04 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab05 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab05 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab06 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Lab07 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lab03-sports-club [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lab03-sports-club [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lab05 [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.BuildingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CoachTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CourierDeliveryTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DeliveryMethodPolymorphismTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EducationalBuildingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EnrollmentTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MedicalBuildingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ParcelLockerDeliveryTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ScheduleTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SportSectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SportsClubTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.StudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.UniversityCampusBuildingTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab07&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/kolisnychenko-artem-oop-khpi-2/labs/Lab07&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kolisnychenko-artem-oop-khpi-2\labs\lab01" />

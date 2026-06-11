@@ -5,7 +5,7 @@ import static org.testng.Assert.*;
 
 public class SportSectionTest {
 
-    @Test(groups = {"domain"})
+    @Test
     public void testSectionGetters() {
         Coach coach = new Coach("Іванов", "Бокс");
         Schedule schedule = new Schedule("Пн", "18:00");
@@ -14,7 +14,7 @@ public class SportSectionTest {
         assertEquals(section.getName(), "Бокс ХПІ");
     }
 
-    @Test(groups = {"smoke"})
+    @Test
     public void testSectionToStringContainsDependencies() {
         Coach coach = new Coach("Іванов", "Бокс");
         Schedule schedule = new Schedule("Пн", "18:00");
