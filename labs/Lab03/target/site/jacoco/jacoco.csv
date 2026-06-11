@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+lab03-sports-club,ua.khpi.oop.lab03,Schedule,87,0,10,0,13,0,9,0,4,0
+lab03-sports-club,ua.khpi.oop.lab03,Enrollment,100,27,12,0,12,8,11,3,5,3
+lab03-sports-club,ua.khpi.oop.lab03,Main,70,0,0,0,19,0,2,0,2,0
+lab03-sports-club,ua.khpi.oop.lab03,SportsClub,46,71,3,5,4,18,4,5,1,4
+lab03-sports-club,ua.khpi.oop.lab03,Coach,71,0,8,0,14,0,8,0,4,0
+lab03-sports-club,ua.khpi.oop.lab03,Student,49,22,5,3,6,7,6,2,2,2
+lab03-sports-club,ua.khpi.oop.lab03,SportSection,44,40,4,4,6,13,5,6,2,5
