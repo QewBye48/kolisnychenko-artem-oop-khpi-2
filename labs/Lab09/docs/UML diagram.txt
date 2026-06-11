@@ -1,0 +1,61 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+top to bottom direction
+
+package "model" {
+
+    class Patient {
+        - patientId : String
+        - fullName : String
+        - age : int
+        + getPatientId() : String
+        + getFullName() : String
+        + getAge() : int
+    }
+
+    class Visit <<Comparable>> {
+        - visitId : String
+        - patient : Patient
+        - visitDate : LocalDate
+        - doctorName : String
+        + getVisitId() : String
+        + getVisitDate() : LocalDate
+        + compareTo(other : Visit) : int
+    }
+
+    class Prescription <<Comparable>> {
+        - prescriptionId : String
+        - patient : Patient
+        - medicineName : String
+        - doseMg : int
+        - days : int
+        + getPrescriptionId() : String
+        + getDays() : int
+        + compareTo(other : Prescription) : int
+    }
+
+    class "MedicalRecord<TEntity, TMeta>" as MedicalRecord {
+        - entity : TEntity
+        - metadata : TMeta
+        + getEntity() : TEntity
+        + getMetadata() : TMeta
+    }
+}
+
+package "util" {
+    class MedicalUtils {
+        + findMaximum<T extends Comparable>(items : List<T>) : T
+    }
+}
+
+Patient "1" <-- "0..*" Visit : patient
+Patient "1" <-- "0..*" Prescription : patient
+
+MedicalRecord ..> Visit : приклад TEntity
+MedicalRecord ..> Prescription : приклад TEntity
+
+MedicalUtils ..> Visit : findMaximum()
+MedicalUtils ..> Prescription : findMaximum()
+
+@enduml
