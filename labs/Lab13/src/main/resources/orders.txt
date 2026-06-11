@@ -1,0 +1,7 @@
+ART-1001; Ноутбук Lenovo; QTY=1; PRICE=42000.50
+ART-1002; Миша Logitech; QTY=2; PRICE=850.00
+ART-1003; Клавіатура HyperX; QTY=1; PRICE=3200.00
+ART-1004; Монітор Samsung; QTY=1; PRICE=7800.99
+BAD-12; Некоректний товар; QTY=1; PRICE=100.00
+ART-1005; Навушники Logitech; QTY=2; PRICE=2500.00
+ART-1006; USB кабель; QTY=3; PRICE=150.75
