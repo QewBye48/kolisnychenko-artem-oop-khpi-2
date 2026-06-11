@@ -1,0 +1,66 @@
+@startuml
+skinparam linetype poly
+skinparam nodesep 120
+skinparam ranksep 100
+
+class SportSection {
+  - sectionName: String
+  - sportType: String
+  - location: String
+  + SportSection(sectionName: String, sportType: String, location: String)
+  + getSectionName(): String
+  + getSportType(): String
+  + getLocation(): String
+  + getDetails(): String
+  + equals(o: Object): boolean
+  + hashCode(): int
+  + toString(): String
+}
+
+class Coach {
+  - fullName: String
+  - specialization: String
+  - experienceYears: int
+  + Coach(fullName: String, specialization: String, experienceYears: int)
+  + getFullName(): String
+  + getSpecialization(): String
+  + getExperienceYears(): int
+  + isExperienced(): boolean
+  + equals(o: Object): boolean
+  + hashCode(): int
+  + toString(): String
+}
+
+class Student {
+  - fullName: String
+  - ticketId: String
+  - studyYear: int
+  + Student(fullName: String, ticketId: String, studyYear: int)
+  + getFullName(): String
+  + getTicketId(): String
+  + getStudyYear(): int
+  + enroll(section: SportSection): void
+  + equals(o: Object): boolean
+  + hashCode(): int
+  + toString(): String
+}
+
+class Schedule {
+  - dayOfWeek: String
+  - startTime: String
+  - durationMinutes: int
+  + Schedule(dayOfWeek: String, startTime: String, durationMinutes: int)
+  + getDayOfWeek(): String
+  + getStartTime(): String
+  + getDurationMinutes(): int
+  + printTime(): void
+  + equals(o: Object): boolean
+  + hashCode(): int
+  + toString(): String
+}
+
+SportSection "1" -left-> "1" Coach : має тренера
+Student "*" -up-> "1" SportSection : відвідує
+SportSection "1" -right-> "*" Schedule : включає в себе
+
+@enduml
