@@ -1,0 +1,106 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+package "model" {
+    class Movie {
+        - title : String
+        - genre : String
+        - rating : double
+        - durationMinutes : int
+        + getTitle() : String
+        + getGenre() : String
+        + getRating() : double
+        + getDurationMinutes() : int
+        + toString() : String
+    }
+
+    class Podcast {
+        - title : String
+        - host : String
+        - episodesCount : int
+        + getTitle() : String
+        + getHost() : String
+        + getEpisodesCount() : int
+        + toString() : String
+    }
+
+    class MediaCatalog {
+        - movies : List<Movie>
+        - podcasts : List<Podcast>
+        + getMovies() : List<Movie>
+        + getPodcasts() : List<Podcast>
+        + getTotalItems() : int
+    }
+}
+
+package "service" {
+    class MediaService {
+        + scanCatalog(catalog : MediaCatalog) : String
+        + sortMoviesByRating(catalog : MediaCatalog) : List<Movie>
+        + recommendTopMovies(catalog : MediaCatalog, limit : int) : List<Movie>
+        + calculateAverageRating(catalog : MediaCatalog) : double
+    }
+}
+
+package "task" {
+    class CatalogScanThread {
+        - catalog : MediaCatalog
+        - service : MediaService
+        - result : String
+        + run() : void
+        + getResult() : String
+    }
+
+    class SortTask {
+        - catalog : MediaCatalog
+        - service : MediaService
+        - sortedMovies : List<Movie>
+        + run() : void
+        + getSortedMovies() : List<Movie>
+    }
+
+    class RecommendationTask {
+        - catalog : MediaCatalog
+        - service : MediaService
+        - recommendations : List<Movie>
+        + run() : void
+        + getRecommendations() : List<Movie>
+    }
+}
+
+package "demo" {
+    class Main {
+        + main(args : String[]) : void
+    }
+}
+
+CatalogScanThread --|> Thread
+SortTask ..|> Runnable
+RecommendationTask ..|> Runnable
+
+MediaCatalog "1" o-- "*" Movie
+MediaCatalog "1" o-- "*" Podcast
+
+MediaService --> MediaCatalog
+MediaService --> Movie
+
+CatalogScanThread --> MediaCatalog
+CatalogScanThread --> MediaService
+
+SortTask --> MediaCatalog
+SortTask --> MediaService
+SortTask --> Movie
+
+RecommendationTask --> MediaCatalog
+RecommendationTask --> MediaService
+RecommendationTask --> Movie
+
+Main ..> MediaCatalog
+Main ..> MediaService
+Main ..> CatalogScanThread
+Main ..> SortTask
+Main ..> RecommendationTask
+
+@enduml
