@@ -1,0 +1,102 @@
+@startuml
+title ЛР15. Діаграма класів
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+package "model" {
+    interface SharedCounter {
+        + increment() : void
+        + getValue() : int
+        + reset() : void
+        + getCounterName() : String
+    }
+
+    class UnsafeSharedCounter {
+        - value : int
+        + increment() : void
+        + getValue() : int
+        + reset() : void
+        + getCounterName() : String
+    }
+
+    class SafeSharedCounter {
+        - value : int
+        + increment() : void
+        + getValue() : int
+        + reset() : void
+        + getCounterName() : String
+    }
+
+    class EventSource {
+        - name : String
+        - eventCount : int
+        + EventSource(name : String, eventCount : int)
+        + getName() : String
+        + getEventCount() : int
+        + toString() : String
+    }
+
+    class CounterResult {
+        - scenarioName : String
+        - threadCount : int
+        - operationsPerThread : int
+        - expectedValue : int
+        - actualValue : int
+        - durationMillis : long
+        + getScenarioName() : String
+        + getThreadCount() : int
+        + getOperationsPerThread() : int
+        + getExpectedValue() : int
+        + getActualValue() : int
+        + getDurationMillis() : long
+        + getLostUpdates() : int
+        + isCorrect() : boolean
+        + toString() : String
+    }
+}
+
+package "threads" {
+    class CounterTask {
+        - eventSource : EventSource
+        - counter : SharedCounter
+        + CounterTask(eventSource : EventSource, counter : SharedCounter)
+        + run() : void
+    }
+}
+
+package "service" {
+    class CounterService {
+        + runConcurrentScenario(scenarioName : String, counter : SharedCounter, threadCount : int, operationsPerThread : int) : CounterResult
+        + runSequentialScenario(scenarioName : String, counter : SharedCounter, totalOperations : int) : CounterResult
+        + buildTextReport(result : CounterResult) : String
+    }
+}
+
+package "demo" {
+    class Main {
+        - THREAD_COUNT : int
+        - OPERATIONS_PER_THREAD : int
+        + main(args : String[]) : void
+    }
+}
+
+SharedCounter <|.. UnsafeSharedCounter
+SharedCounter <|.. SafeSharedCounter
+
+CounterTask ..|> Runnable
+CounterTask --> EventSource
+CounterTask --> SharedCounter
+
+CounterService --> SharedCounter
+CounterService --> EventSource
+CounterService --> CounterTask
+CounterService --> CounterResult
+
+Main ..> CounterService
+Main ..> UnsafeSharedCounter
+Main ..> SafeSharedCounter
+Main ..> CounterResult
+
+@enduml
